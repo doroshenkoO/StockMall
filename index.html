@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Главная</title>
+	<meta name="robots" content="noindex">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- Main wrap -->
+<main class="wrap">
+
+	<!-- Header -->
+	<header class="header">
+		<div class="header_top">
+			<div class="main">
+				<div class="header-wrapper">
+					<div class="header-logo"><a href="#"><span class="thin">Stock</span><span class="bold">mall</span></a></div>
+					<div id="category-menu" class="menu">
+						<ul>
+							<li class="category-menu-item">
+								<h3>Мужчинам</h3>
+								<!-- <div class="subcat-menu-wrapper">
+									<ul class="subcat-menu">
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+									</ul>
+									<ul class="subcat-menu">
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+									</ul>
+									<ul class="subcat-menu">
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+										<li class="subcat-menu-item"><a href="#">категория</a></li>
+									</ul>
+								</div> -->
+							</li>
+							<li class="category-menu-item">
+								<h3>Женщинам</h3>
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="header-right">
+						<div id="main-menu" class="menu">
+							<ul>
+								<li class="menu-item"><a href="#" >О нас</a></li>
+								<li class="menu-item"><a href="#" >Магазины</a></li>
+							</ul>
+						</div>
+						<div id="user-menu" class="menu">
+							<ul>
+								<li id="search_input" class="menu-item">
+									<input type="search" name="search" id="search" placeholder="Поиск" />
+								</li>
+								<li class="menu-item menu-search"><a href="#"><i class="ion-ios-search-strong" aria-hidden="true"></i></a></li>
+								<li class="menu-item"><a href="#"><i class="ion-ios-person"></i></a></li>
+							</ul>
+						</div>
+					</div>
+
+
+
+					<script>
+						jQuery(document).ready(function($) {
+							$('.menu-search').click(function(e) {
+								e.preventDefault();
+								if($('#search_input').hasClass('active')){
+									$('#search_input').animate({width: 0}, function() {
+										$('#search_input').removeClass('active');
+									});
+									
+								}
+								else{
+									
+									$('#search_input').animate({width: 200});
+									$('#search_input').addClass('active');
+								}
+					
+							});
+						});
+					</script>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 							
+<div class="header_bot-wrap__item">
+								<div class="header_bot-category header_bot-category--man">Мужчинам
+								<div class="header_bot-category__drop">
+									<ul class="">
+										<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+										<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+										<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+										<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+										<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+										<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="header_bot-wrap__item">
+								<div class="header_bot-category header_bot-category--women">Женщинам
+								<div class="header_bot-category__drop">
+									<div class="header_bot-category-drop__title">Женщинам</div>
+										<ul class="">
+											<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+											<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+											<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+											<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+											<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+											<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+											<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+											<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+											<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+											<li class="header_bot-drop"><a href="#" class="header_bot-drop__link">Категория  название</a></li>
+										</ul>
+									</div>
+								</div>
+							</div> -->
+
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+		<div class="header_main">
+			<img src="images/stokmall.jpg" alt="">
+		</div>
+	</header>
+	<!-- End header -->
+
+	<!-- Section product cards -->
+	<section class="content-block content-block-1 sm-product_cards">
+		<div class="main">
+			<div class="sm-product_cards-block">
+				<div class="sm-product_cards__item">
+					<div class="sm-main-card">
+						<a href="#">
+							<div class="sm-main-card__image"><img src="images/card-image.jpg" alt="card" width="274" height="274"></div>
+							<div class="sm-main-card__title">Спортивный костюм Sport life</div>
+							<div class="sm-main-card__price">1147 грн</div>
+						</a>
+					</div>
+				</div>
+				<div class="sm-product_cards__item">
+					<div class="sm-main-card">
+						<a href="#">
+							<div class="sm-main-card__image"><img src="images/card-image1.jpg" alt="card" width="274" height="274"></div>
+							<div class="sm-main-card__title">Спортивный костюм</div>
+							<div class="sm-main-card__price">1147 грн</div>
+						</a>
+					</div>
+				</div>
+				<div class="sm-product_cards__item">
+					<div class="sm-main-card">
+						<a href="#">
+							<div class="sm-main-card__image"><img src="images/card-image2.jpg" alt="card" width="274" height="274"></div>
+							<div class="sm-main-card__title">Спортивный костюм Sport life</div>
+							<div class="sm-main-card__price">1147 грн</div>
+						</a>
+					</div>
+				</div>
+				<div class="sm-product_cards__item">
+					<div class="sm-main-card">
+						<a href="#">
+							<div class="sm-main-card__image"><img src="images/card-image3.jpg" alt="card" width="274" height="274"></div>
+							<div class="sm-main-card__title">Спортивный костюм Sport life Спортивный костюм Sport life</div>
+							<div class="sm-main-card__price">1147 грн</div>
+						</a>
+					</div>
+				</div>
+				<div class="sm-product_cards__item">
+					<div class="sm-main-card">
+						<a href="#">
+							<div class="sm-main-card__image"><img src="images/card-image.jpg" alt="card" width="274" height="274"></div>
+							<div class="sm-main-card__title">Спортивный костюм Sport life</div>
+							<div class="sm-main-card__price">1147 грн</div>
+						</a>
+					</div>
+				</div>
+				<div class="sm-product_cards__item">
+					<div class="sm-main-card">
+						<a href="#">
+							<div class="sm-main-card__image"><img src="images/card-image.jpg" alt="card" width="274" height="274"></div>
+							<div class="sm-main-card__title">Спортивный костюм</div>
+							<div class="sm-main-card__price">1147 грн</div>
+						</a>
+					</div>
+				</div>
+				<div class="sm-product_cards__item">
+					<div class="sm-main-card">
+						<a href="#">
+							<div class="sm-main-card__image"><img src="images/card-image.jpg" alt="card" width="274" height="274"></div>
+							<div class="sm-main-card__title">Спортивный костюм</div>
+							<div class="sm-main-card__price">1147 грн</div>
+						</a>
+					</div>
+				</div>
+				<div class="sm-product_cards__item">
+					<div class="sm-main-card">
+						<a href="#">
+							<div class="sm-main-card__image"><img src="images/card-image.jpg" alt="card" width="274" height="274"></div>
+							<div class="sm-main-card__title">Спортивный костюм Спортивный костюм Sport life Спортивный костюм Sport life</div>
+							<div class="sm-main-card__price">1147 грн</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End section product cards -->
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="main">
+			
+		</div>
+	</footer>
+	<!-- End footer -->
+
+</main>
+<!-- End main wrap -->
+
+<!--js -->
+
+<!-- <script src="js/common.min.js"></script> -->
+<!-- end js -->
+
+</body>
+</html>
